@@ -1,0 +1,31 @@
+language: it
+intents:
+  HassGetState:
+    data:
+      # https://www.home-assistant.io/integrations/sensor/
+
+      # Temperature
+      - sentences:
+          - "<what_is_the_class_of_name>"
+        response: one
+        requires_context:
+          domain: sensor
+          device_class: temperature
+        slots:
+          domain: sensor
+          device_class: temperature
+        expansion_rules:
+          class: "temperatura"
+
+      # Humidity
+      - sentences:
+          - "<what_is_the_class_of_name>"
+        response: one
+        requires_context:
+          domain: sensor
+          device_class: humidity
+        slots:
+          domain: sensor
+          device_class: humidity
+        expansion_rules:
+          class: "umidità"

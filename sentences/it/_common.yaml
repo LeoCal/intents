@@ -344,6 +344,8 @@ expansion_rules:
   light: "luc(e|i)"
   in_here: "(qu(a|i)|in questa (stanza|camera))"
   home: "(casa|appartamento)"
+  # Domande
+  what_is_the_class_of_name: "<what_is> [<the>][ ]<class> [(<of>|in|(indicata|misurata) (da[l|lla])) <name>] [in <area>]"
 skip_words:
   - "grazie"
   - "per favore"

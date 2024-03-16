@@ -63,3 +63,15 @@ entities:
     state: "on"
   - name: "Modalità Festa"
     id: "scene.modalita_festa"
+  - name: "Sensore temperatura frigorifero"
+    id: "sensor.temperatura_frigorifero"
+    state: "5"
+    attributes:
+      device_class: temperature
+      unit_of_measurement: "°C"
+  - name: "Sensore umidità frigorifero"
+    id: "sensor.umidità_frigorifero"
+    state: "50"
+    attributes:
+      device_class: humidity
+      unit_of_measurement: "%"

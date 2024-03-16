@@ -1,0 +1,27 @@
+language: it
+tests:
+  # Temperature
+  - sentences:
+      - "qual è la temperatura del sensore temperatura frigorifero?"
+      - "qual è la temperatura misurata dal sensore temperatura frigorifero?"
+      - "qual è la temperatura indicata dal sensore temperatura frigorifero?"
+    intent:
+      name: HassGetState
+      slots:
+        domain: sensor
+        device_class: temperature
+        name: "Sensore temperatura frigorifero"
+    response: "Sensore temperatura frigorifero è 5 °C"
+
+  # Humidity
+  - sentences:
+      - "qual è l'umidità del sensore umidità frigorifero?"
+      - "qual è l'umidità misurata dal sensore umidità frigorifero?"
+      - "qual è l'umidità indicata dal sensore umidità frigorifero?"
+    intent:
+      name: HassGetState
+      slots:
+        domain: sensor
+        device_class: humidity
+        name: "Sensore umidità frigorifero"
+    response: "Sensore umidità frigorifero è 50 %"
